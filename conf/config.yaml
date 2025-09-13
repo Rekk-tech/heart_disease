@@ -1,0 +1,99 @@
+# Configuration file for Heart Disease Prediction Project
+
+# Data paths
+data:
+  raw: "data/raw/Heart_disease_cleveland_new.csv"
+  interim: "data/interim"
+  processed: "data/processed"
+  train: "data/processed/train"
+  val: "data/processed/val"
+  test: "data/processed/test"
+
+# Model paths
+models:
+  model: "models/heart_model.pkl"
+  preprocessor: "models/preprocessor.pkl"
+  quantiles: "models/quantiles.json"
+  model_card: "models/model_card.md"
+
+# Feature columns
+features:
+  numeric:
+    - age
+    - trestbps
+    - chol
+    - thalach
+    - oldpeak
+    - ca
+  
+  categorical:
+    - sex
+    - cp
+    - fbs
+    - restecg
+    - exang
+    - slope
+    - thal
+  
+  target: "target"
+
+# Data splitting
+splitting:
+  test_size: 0.2
+  val_size: 0.2
+  random_state: 42
+  stratify: true
+
+# Preprocessing
+preprocessing:
+  numeric_strategy: "median"
+  categorical_strategy: "most_frequent"
+  handle_unknown: "ignore"
+
+# Feature engineering
+feature_engineering:
+  age_bins: 5
+  create_ratios: true
+  feature_selection: true
+
+# Model parameters
+models:
+  naive_bayes:
+    var_smoothing: 1e-9
+  
+  knn:
+    n_neighbors: 5
+    weights: "distance"
+    metric: "euclidean"
+  
+  decision_tree:
+    max_depth: 10
+    min_samples_split: 5
+    min_samples_leaf: 2
+    random_state: 42
+  
+  ensemble:
+    voting: "soft"
+    n_jobs: -1
+
+# Evaluation metrics
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - roc_auc
+  cv_folds: 5
+
+# API settings
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/heart_disease.log"

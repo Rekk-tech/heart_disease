@@ -1,0 +1,105 @@
+# Hyperparameters for Heart Disease Prediction Models
+
+# Data preprocessing parameters
+preprocessing:
+  numeric_imputation: "median"
+  categorical_imputation: "most_frequent"
+  scaling_method: "standard"
+  
+# Feature engineering parameters
+feature_engineering:
+  age_bins:
+    bins: [0, 35, 50, 65, 100]
+    labels: ["young", "middle", "senior", "elderly"]
+  
+  ratio_features:
+    - ["chol", "age"]  # cholesterol to age ratio
+    - ["trestbps", "thalach"]  # blood pressure to max heart rate ratio
+  
+  polynomial_features:
+    degree: 2
+    include_bias: false
+    interaction_only: false
+
+# Model hyperparameters
+models:
+  naive_bayes:
+    var_smoothing: 1e-9
+    
+  knn:
+    n_neighbors: [3, 5, 7, 9, 11]
+    weights: ["uniform", "distance"]
+    metric: ["euclidean", "manhattan", "minkowski"]
+    algorithm: ["auto", "ball_tree", "kd_tree"]
+    
+  decision_tree:
+    max_depth: [5, 10, 15, 20, null]
+    min_samples_split: [2, 5, 10, 15]
+    min_samples_leaf: [1, 2, 4, 8]
+    criterion: ["gini", "entropy"]
+    max_features: ["auto", "sqrt", "log2", null]
+    
+  random_forest:
+    n_estimators: [50, 100, 200, 300]
+    max_depth: [5, 10, 15, null]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+    max_features: ["auto", "sqrt", "log2"]
+    
+  gradient_boosting:
+    n_estimators: [50, 100, 200]
+    learning_rate: [0.01, 0.1, 0.2]
+    max_depth: [3, 5, 7]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+
+# Cross-validation parameters
+cross_validation:
+  cv_folds: 5
+  scoring: "roc_auc"
+  return_train_score: true
+  
+# Hyperparameter tuning
+hyperparameter_tuning:
+  method: "grid_search"  # or "random_search", "bayesian"
+  n_iter: 50  # for random search
+  cv_folds: 5
+  scoring: "roc_auc"
+  n_jobs: -1
+  verbose: 1
+
+# Ensemble parameters
+ensemble:
+  voting_classifier:
+    voting: "soft"
+    n_jobs: -1
+    
+  stacking_classifier:
+    cv: 5
+    stack_method: "predict_proba"
+    n_jobs: -1
+    
+  bagging_classifier:
+    n_estimators: 10
+    max_samples: 0.8
+    max_features: 0.8
+    random_state: 42
+
+# Feature selection parameters
+feature_selection:
+  method: "recursive_feature_elimination"
+  n_features_to_select: 10
+  step: 1
+  cv: 5
+  
+# Model persistence
+persistence:
+  save_preprocessor: true
+  save_feature_names: true
+  save_model_metadata: true
+  compression: "gzip"
+
+# Threshold optimization
+threshold_optimization:
+  method: "youden_index"  # or "f1_score", "precision_recall"
+  cv_folds: 5

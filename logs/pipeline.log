@@ -1,0 +1,559 @@
+2025-09-15 08:23:25,492 - utils - INFO - Logging configured with level: INFO
+2025-09-15 08:23:25,499 - utils - INFO - Logging to file: C:\Users\hoang\OneDrive\Desktop\heart_disease_project\logs\pipeline.log
+2025-09-15 08:23:40,651 - utils - INFO - Random seed set to: 42
+2025-09-15 08:23:40,652 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 08:23:40,661 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 08:23:40,661 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 08:23:40,679 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 08:23:40,680 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 08:23:40,681 - utils - INFO - Validating data schema...
+2025-09-15 08:23:40,705 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 08:23:40,708 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 08:23:40,709 - utils - INFO - Data validation passed
+2025-09-15 08:23:40,725 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 08:23:40,726 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 08:23:40,727 - utils - INFO - Creating engineered features...
+2025-09-15 08:23:40,743 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 08:23:40,745 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 08:23:40,746 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 08:23:40,747 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 08:23:40,748 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 08:23:40,748 - utils - INFO - Selecting features...
+2025-09-15 08:23:40,756 - feature_engineering - ERROR - Error in feature selection: 'feature_selection'
+2025-09-15 08:23:40,756 - utils - ERROR - Error in data preprocessing: 'feature_selection'
+2025-09-15 08:23:40,757 - utils - ERROR - Pipeline execution failed: 'feature_selection'
+2025-09-15 08:25:16,278 - utils - INFO - Logging configured with level: INFO
+2025-09-15 08:25:22,134 - utils - INFO - Random seed set to: 42
+2025-09-15 08:25:22,135 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 08:25:22,141 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 08:25:22,142 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 08:25:22,155 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 08:25:22,155 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 08:25:22,155 - utils - INFO - Validating data schema...
+2025-09-15 08:25:22,163 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 08:25:22,164 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 08:25:22,165 - utils - INFO - Data validation passed
+2025-09-15 08:25:22,171 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 08:25:22,171 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 08:25:22,172 - utils - INFO - Creating engineered features...
+2025-09-15 08:25:22,184 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 08:25:22,186 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 08:25:22,187 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 08:25:22,188 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 08:25:22,188 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 08:25:22,189 - utils - INFO - Selecting features...
+2025-09-15 08:25:22,190 - feature_engineering - ERROR - Error in feature selection: 'feature_selection'
+2025-09-15 08:25:22,190 - utils - ERROR - Error in data preprocessing: 'feature_selection'
+2025-09-15 08:25:22,190 - utils - ERROR - Pipeline execution failed: 'feature_selection'
+2025-09-15 20:17:50,653 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:18:00,002 - utils - INFO - Random seed set to: 42
+2025-09-15 20:18:00,010 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:18:00,010 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:18:00,018 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:18:00,020 - utils - INFO - Creating engineered features...
+2025-09-15 20:18:00,029 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:18:00,031 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:18:00,032 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:18:00,033 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:18:00,035 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:18:00,036 - utils - INFO - Selecting features...
+2025-09-15 20:18:00,038 - feature_engineering - ERROR - Error in feature selection: 'feature_selection'
+2025-09-15 20:18:00,039 - utils - ERROR - Error in data preprocessing: 'feature_selection'
+2025-09-15 20:19:09,213 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:19:13,144 - utils - INFO - Random seed set to: 42
+2025-09-15 20:19:13,154 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:19:13,155 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:19:13,160 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:19:13,161 - utils - INFO - Creating engineered features...
+2025-09-15 20:19:13,164 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:19:13,167 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:19:13,168 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:19:13,169 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:19:13,170 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:19:13,170 - utils - INFO - Selecting features...
+2025-09-15 20:19:13,175 - feature_engineering - ERROR - Error in univariate feature selection: could not convert string to float: 'senior'
+2025-09-15 20:19:13,176 - feature_engineering - ERROR - Error in feature selection: could not convert string to float: 'senior'
+2025-09-15 20:19:13,177 - utils - ERROR - Error in data preprocessing: could not convert string to float: 'senior'
+2025-09-15 20:19:37,807 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:19:40,900 - utils - INFO - Random seed set to: 42
+2025-09-15 20:19:40,906 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:19:40,906 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:19:40,910 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:19:40,911 - utils - INFO - Creating engineered features...
+2025-09-15 20:19:40,913 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:19:40,915 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:19:40,916 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:19:40,917 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:19:40,918 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:19:40,918 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:19:40,926 - preprocessing - INFO - Data split completed:
+2025-09-15 20:19:40,927 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:19:40,927 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:19:40,927 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:19:40,928 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:19:40,928 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:19:40,928 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:19:40,940 - preprocessing - ERROR - Error preprocessing data: LabelEncoder.fit_transform() takes 2 positional arguments but 3 were given
+2025-09-15 20:19:40,941 - utils - ERROR - Error in data preprocessing: LabelEncoder.fit_transform() takes 2 positional arguments but 3 were given
+2025-09-15 20:20:16,076 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:20:19,750 - utils - INFO - Random seed set to: 42
+2025-09-15 20:20:19,757 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:20:19,758 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:20:19,762 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:20:19,763 - utils - INFO - Creating engineered features...
+2025-09-15 20:20:19,769 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:20:19,772 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:20:19,774 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:20:19,775 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:20:19,776 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:20:19,777 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:20:19,788 - preprocessing - INFO - Data split completed:
+2025-09-15 20:20:19,788 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:20:19,789 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:20:19,789 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:20:19,790 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:20:19,790 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:20:19,791 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:20:19,808 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:20:19,809 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:20:19,817 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:20:19,822 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:20:19,823 - utils - INFO - Selecting features...
+2025-09-15 20:20:19,828 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:20:19,830 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:20:19,835 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:20:19,836 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:20:19,839 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:20:19,839 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:20:19,840 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:20:19,843 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:20:19,844 - utils - ERROR - Error in data preprocessing: 'preprocessor'
+2025-09-15 20:21:13,732 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:21:17,439 - utils - INFO - Random seed set to: 42
+2025-09-15 20:21:17,446 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:21:17,447 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:21:17,451 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:21:17,452 - utils - INFO - Creating engineered features...
+2025-09-15 20:21:17,454 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:21:17,456 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:21:17,457 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:21:17,457 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:21:17,458 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:21:17,458 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:21:17,464 - preprocessing - INFO - Data split completed:
+2025-09-15 20:21:17,464 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:21:17,464 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:21:17,465 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:21:17,465 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:21:17,465 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:21:17,465 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:21:17,476 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:21:17,477 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:21:17,482 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:21:17,487 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:21:17,487 - utils - INFO - Selecting features...
+2025-09-15 20:21:17,490 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:21:17,491 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:21:17,495 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:21:17,497 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:21:17,500 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:21:17,501 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:21:17,501 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:21:17,504 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:21:17,521 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:21:17,523 - persistence - INFO - Quantiles saved to models/quantiles.json
+2025-09-15 20:21:17,524 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:27:02,406 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:27:06,033 - utils - INFO - Random seed set to: 42
+2025-09-15 20:27:06,034 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:27:06,039 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:27:06,040 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:27:06,046 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:27:06,047 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:27:06,047 - utils - INFO - Validating data schema...
+2025-09-15 20:27:06,069 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:27:06,070 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:27:06,071 - utils - INFO - Data validation passed
+2025-09-15 20:27:06,076 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:27:06,077 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:27:06,078 - utils - INFO - Creating engineered features...
+2025-09-15 20:27:06,081 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:27:06,082 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:27:06,083 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:27:06,084 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:27:06,085 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:27:06,085 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:27:06,092 - preprocessing - INFO - Data split completed:
+2025-09-15 20:27:06,093 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:27:06,093 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:27:06,094 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:27:06,094 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:27:06,094 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:27:06,094 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:27:06,108 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:27:06,108 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:27:06,113 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:27:06,117 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:27:06,118 - utils - INFO - Selecting features...
+2025-09-15 20:27:06,121 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:27:06,122 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:27:06,127 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:27:06,128 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:27:06,131 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:27:06,132 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:27:06,132 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:27:06,136 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:27:06,139 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:27:06,140 - persistence - INFO - Quantiles saved to models/quantiles.json
+2025-09-15 20:27:06,140 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:27:06,141 - utils - INFO - Training individual models...
+2025-09-15 20:27:06,142 - modeling - ERROR - Error training Naive Bayes: The 'var_smoothing' parameter of GaussianNB must be a float in the range [0.0, inf). Got '1e-9' instead.
+2025-09-15 20:27:06,142 - modeling - ERROR - Error training models: The 'var_smoothing' parameter of GaussianNB must be a float in the range [0.0, inf). Got '1e-9' instead.
+2025-09-15 20:27:06,143 - utils - ERROR - Error in model training: The 'var_smoothing' parameter of GaussianNB must be a float in the range [0.0, inf). Got '1e-9' instead.
+2025-09-15 20:27:06,143 - utils - ERROR - Pipeline execution failed: The 'var_smoothing' parameter of GaussianNB must be a float in the range [0.0, inf). Got '1e-9' instead.
+2025-09-15 20:28:25,575 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:28:29,265 - utils - INFO - Random seed set to: 42
+2025-09-15 20:28:29,267 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:28:29,275 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:28:29,275 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:28:29,287 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:28:29,288 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:28:29,289 - utils - INFO - Validating data schema...
+2025-09-15 20:28:29,295 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:28:29,296 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:28:29,297 - utils - INFO - Data validation passed
+2025-09-15 20:28:29,304 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:28:29,305 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:28:29,306 - utils - INFO - Creating engineered features...
+2025-09-15 20:28:29,310 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:28:29,312 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:28:29,314 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:28:29,316 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:28:29,316 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:28:29,317 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:28:29,324 - preprocessing - INFO - Data split completed:
+2025-09-15 20:28:29,324 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:28:29,324 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:28:29,324 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:28:29,325 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:28:29,325 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:28:29,325 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:28:29,339 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:28:29,339 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:28:29,346 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:28:29,353 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:28:29,353 - utils - INFO - Selecting features...
+2025-09-15 20:28:29,356 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:28:29,357 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:28:29,360 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:28:29,361 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:28:29,364 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:28:29,366 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:28:29,366 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:28:29,370 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:28:29,373 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:28:29,374 - persistence - INFO - Quantiles saved to models/quantiles.json
+2025-09-15 20:28:29,374 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:28:29,376 - utils - INFO - Training individual models...
+2025-09-15 20:28:29,379 - modeling - INFO - Naive Bayes model trained successfully
+2025-09-15 20:28:29,386 - modeling - INFO - KNN model trained successfully
+2025-09-15 20:28:29,391 - modeling - INFO - Decision Tree model trained successfully
+2025-09-15 20:28:29,391 - modeling - INFO - Trained 3 models successfully
+2025-09-15 20:28:29,392 - utils - INFO - Evaluating models on validation set...
+2025-09-15 20:28:29,392 - modeling - ERROR - Error evaluating models: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- cp_1
+Feature names seen at fit time, yet now missing:
+- slope_1
+
+2025-09-15 20:28:29,393 - utils - ERROR - Error in model training: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- cp_1
+Feature names seen at fit time, yet now missing:
+- slope_1
+
+2025-09-15 20:28:29,393 - utils - ERROR - Pipeline execution failed: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- cp_1
+Feature names seen at fit time, yet now missing:
+- slope_1
+
+2025-09-15 20:29:48,265 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:29:52,008 - utils - INFO - Random seed set to: 42
+2025-09-15 20:29:52,010 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:29:52,015 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:29:52,015 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:29:52,021 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:29:52,022 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:29:52,022 - utils - INFO - Validating data schema...
+2025-09-15 20:29:52,028 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:29:52,028 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:29:52,028 - utils - INFO - Data validation passed
+2025-09-15 20:29:52,032 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:29:52,032 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:29:52,033 - utils - INFO - Creating engineered features...
+2025-09-15 20:29:52,035 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:29:52,036 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:29:52,037 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:29:52,038 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:29:52,038 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:29:52,038 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:29:52,044 - preprocessing - INFO - Data split completed:
+2025-09-15 20:29:52,045 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:29:52,045 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:29:52,045 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:29:52,046 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:29:52,046 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:29:52,046 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:29:52,058 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:29:52,058 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:29:52,064 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:29:52,071 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:29:52,071 - utils - INFO - Selecting features...
+2025-09-15 20:29:52,074 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:29:52,075 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:29:52,084 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:29:52,085 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:29:52,089 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:29:52,090 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:29:52,091 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:29:52,094 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:29:52,100 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:29:52,103 - persistence - INFO - Quantiles saved to models/quantiles.json
+2025-09-15 20:29:52,104 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:29:52,108 - utils - ERROR - Error in model training: "['slope_1'] not in index"
+2025-09-15 20:29:52,108 - utils - ERROR - Pipeline execution failed: "['slope_1'] not in index"
+2025-09-15 20:30:53,809 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:30:57,508 - utils - INFO - Random seed set to: 42
+2025-09-15 20:30:57,510 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:30:57,515 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:30:57,516 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:30:57,523 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:30:57,523 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:30:57,523 - utils - INFO - Validating data schema...
+2025-09-15 20:30:57,529 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:30:57,529 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:30:57,530 - utils - INFO - Data validation passed
+2025-09-15 20:30:57,533 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:30:57,533 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:30:57,534 - utils - INFO - Creating engineered features...
+2025-09-15 20:30:57,537 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:30:57,538 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:30:57,538 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:30:57,539 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:30:57,539 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:30:57,539 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:30:57,545 - preprocessing - INFO - Data split completed:
+2025-09-15 20:30:57,546 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:30:57,546 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:30:57,546 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:30:57,547 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:30:57,547 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:30:57,547 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:30:57,560 - preprocessing - INFO - Data preprocessing completed. Shape: (181, 26)
+2025-09-15 20:30:57,561 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:30:57,567 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:30:57,573 - preprocessing - INFO - Data preprocessing completed. Shape: (61, 26)
+2025-09-15 20:30:57,574 - utils - INFO - Aligning validation and test data with training columns...
+2025-09-15 20:30:57,574 - utils - INFO - Selecting features...
+2025-09-15 20:30:57,579 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:30:57,582 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:30:57,592 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:30:57,594 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:30:57,601 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:30:57,602 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:30:57,602 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:30:57,606 - utils - INFO - Saving preprocessor and quantiles...
+2025-09-15 20:30:57,609 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:30:57,611 - persistence - INFO - Quantiles saved to models/quantiles.json
+2025-09-15 20:30:57,612 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:30:57,615 - utils - ERROR - Error in model training: "['slope_1'] not in index"
+2025-09-15 20:30:57,615 - utils - ERROR - Pipeline execution failed: "['slope_1'] not in index"
+2025-09-15 20:33:59,373 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:34:03,177 - utils - INFO - Random seed set to: 42
+2025-09-15 20:34:03,178 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:34:03,185 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:34:03,185 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:34:03,194 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:34:03,195 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:34:03,195 - utils - INFO - Validating data schema...
+2025-09-15 20:34:03,200 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:34:03,200 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:34:03,201 - utils - INFO - Data validation passed
+2025-09-15 20:34:03,204 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:34:03,205 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:34:03,206 - utils - INFO - Creating engineered features...
+2025-09-15 20:34:03,208 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:34:03,209 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:34:03,210 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:34:03,211 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:34:03,211 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:34:03,212 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:34:03,217 - preprocessing - INFO - Data split completed:
+2025-09-15 20:34:03,217 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:34:03,218 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:34:03,218 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:34:03,218 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:34:03,218 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:34:03,219 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:34:03,231 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:34:03,241 - utils - INFO - Selecting features...
+2025-09-15 20:34:03,245 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:34:03,246 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:34:03,247 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:34:03,247 - utils - INFO - Saving preprocessor...
+2025-09-15 20:34:03,250 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:34:03,250 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:34:03,253 - utils - INFO - Training with 10 features
+2025-09-15 20:34:03,254 - utils - INFO - Training individual models...
+2025-09-15 20:34:03,257 - modeling - INFO - Naive Bayes model trained successfully
+2025-09-15 20:34:03,259 - modeling - INFO - KNN model trained successfully
+2025-09-15 20:34:03,261 - modeling - INFO - Decision Tree model trained successfully
+2025-09-15 20:34:03,261 - modeling - INFO - Trained 3 models successfully
+2025-09-15 20:34:03,262 - utils - INFO - Evaluating models on validation set...
+2025-09-15 20:34:03,272 - modeling - INFO - naive_bayes - Accuracy: 0.8361, F1: 0.8214
+2025-09-15 20:34:03,272 - utils - INFO - naive_bayes: Accuracy=0.8361, F1=0.8214, ROC-AUC=0.9037
+2025-09-15 20:34:03,283 - modeling - INFO - knn - Accuracy: 0.7541, F1: 0.7273
+2025-09-15 20:34:03,284 - utils - INFO - knn: Accuracy=0.7541, F1=0.7273, ROC-AUC=0.8626
+2025-09-15 20:34:03,296 - modeling - INFO - decision_tree - Accuracy: 0.7869, F1: 0.7347
+2025-09-15 20:34:03,296 - utils - INFO - decision_tree: Accuracy=0.7869, F1=0.7347, ROC-AUC=0.7825
+2025-09-15 20:34:03,297 - utils - INFO - Creating ensemble model...
+2025-09-15 20:34:03,297 - modeling - INFO - Ensemble model created with 3 base models
+2025-09-15 20:34:07,236 - modeling - INFO - ensemble - Accuracy: 0.7869, F1: 0.7547
+2025-09-15 20:34:07,237 - utils - INFO - Ensemble Results: {'accuracy': 0.7868852459016393, 'precision': 0.8, 'recall': 0.7142857142857143, 'f1': 0.7547169811320755, 'roc_auc': 0.8896103896103896}
+2025-09-15 20:34:07,238 - utils - INFO - Saving trained models...
+2025-09-15 20:34:07,243 - persistence - INFO - Model saved to models/heart_model.pkl
+2025-09-15 20:34:07,244 - utils - INFO - Model training completed successfully
+2025-09-15 20:34:07,246 - utils - INFO - Evaluating models on test set...
+2025-09-15 20:34:07,247 - utils - INFO - Evaluating naive_bayes...
+2025-09-15 20:34:07,262 - evaluation - INFO - Classification report generated
+2025-09-15 20:34:07,623 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,624 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,624 - utils - WARNING - Failed to evaluate naive_bayes: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,624 - utils - INFO - Evaluating knn...
+2025-09-15 20:34:07,642 - evaluation - INFO - Classification report generated
+2025-09-15 20:34:07,652 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,653 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,654 - utils - WARNING - Failed to evaluate knn: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,654 - utils - INFO - Evaluating decision_tree...
+2025-09-15 20:34:07,677 - evaluation - INFO - Classification report generated
+2025-09-15 20:34:07,687 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,688 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,688 - utils - WARNING - Failed to evaluate decision_tree: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,689 - utils - INFO - Evaluating ensemble...
+2025-09-15 20:34:07,714 - evaluation - INFO - Classification report generated
+2025-09-15 20:34:07,723 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,724 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,724 - utils - WARNING - Failed to evaluate ensemble: object of type 'NoneType' has no len()
+2025-09-15 20:34:07,725 - utils - ERROR - Error in model evaluation: No models were evaluated successfully
+2025-09-15 20:34:07,726 - utils - ERROR - Pipeline execution failed: No models were evaluated successfully
+2025-09-15 20:37:58,761 - utils - INFO - Logging configured with level: INFO
+2025-09-15 20:38:02,275 - utils - INFO - Random seed set to: 42
+2025-09-15 20:38:02,276 - utils - INFO - Starting Heart Disease Prediction Pipeline
+2025-09-15 20:38:02,281 - utils - INFO - Configuration loaded from conf/config.yaml
+2025-09-15 20:38:02,282 - utils - INFO - Loading data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:38:02,288 - data_loader - INFO - Successfully loaded data from data/raw/Heart_disease_cleveland_new.csv
+2025-09-15 20:38:02,289 - data_loader - INFO - Data shape: (303, 14)
+2025-09-15 20:38:02,289 - utils - INFO - Validating data schema...
+2025-09-15 20:38:02,294 - data_loader - INFO - Target distribution:
+target
+0    164
+1    139
+Name: count, dtype: int64
+2025-09-15 20:38:02,296 - data_loader - INFO - Schema validation completed successfully
+2025-09-15 20:38:02,297 - utils - INFO - Data validation passed
+2025-09-15 20:38:02,301 - utils - INFO - Dataset shape: (303, 14)
+2025-09-15 20:38:02,301 - utils - INFO - Memory usage: 0.03 MB
+2025-09-15 20:38:02,302 - utils - INFO - Creating engineered features...
+2025-09-15 20:38:02,304 - feature_engineering - INFO - Created age bins: ['young', 'middle', 'senior', 'elderly']
+2025-09-15 20:38:02,305 - feature_engineering - INFO - Created ratio feature: chol_age_ratio
+2025-09-15 20:38:02,305 - feature_engineering - INFO - Created ratio feature: trestbps_thalach_ratio
+2025-09-15 20:38:02,306 - feature_engineering - INFO - Created ratio feature: oldpeak_age_ratio
+2025-09-15 20:38:02,307 - feature_engineering - INFO - Feature engineering completed. New shape: (303, 18)
+2025-09-15 20:38:02,307 - utils - INFO - Splitting data into train/validation/test sets...
+2025-09-15 20:38:02,312 - preprocessing - INFO - Data split completed:
+2025-09-15 20:38:02,313 - preprocessing - INFO - Train: (181, 18)
+2025-09-15 20:38:02,313 - preprocessing - INFO - Validation: (61, 18)
+2025-09-15 20:38:02,313 - preprocessing - INFO - Test: (61, 18)
+2025-09-15 20:38:02,313 - utils - INFO - Creating preprocessing pipeline...
+2025-09-15 20:38:02,313 - preprocessing - INFO - Preprocessor created successfully
+2025-09-15 20:38:02,314 - utils - INFO - Fitting preprocessor on training data...
+2025-09-15 20:38:02,324 - utils - INFO - Transforming validation and test data...
+2025-09-15 20:38:02,334 - utils - INFO - Selecting features...
+2025-09-15 20:38:02,337 - feature_engineering - INFO - Selected 10 features using univariate selection
+2025-09-15 20:38:02,337 - feature_engineering - INFO - Feature selection completed. Selected 10 features
+2025-09-15 20:38:02,338 - utils - INFO - Calculating quantiles for numeric features...
+2025-09-15 20:38:02,339 - utils - INFO - Saving preprocessor...
+2025-09-15 20:38:02,341 - persistence - INFO - Preprocessor saved to models/preprocessor.pkl
+2025-09-15 20:38:02,342 - utils - INFO - Data preprocessing completed successfully
+2025-09-15 20:38:02,343 - utils - INFO - Training with 10 features
+2025-09-15 20:38:02,343 - utils - INFO - Training individual models...
+2025-09-15 20:38:02,345 - modeling - INFO - Naive Bayes model trained successfully
+2025-09-15 20:38:02,347 - modeling - INFO - KNN model trained successfully
+2025-09-15 20:38:02,349 - modeling - INFO - Decision Tree model trained successfully
+2025-09-15 20:38:02,349 - modeling - INFO - Trained 3 models successfully
+2025-09-15 20:38:02,349 - utils - INFO - Evaluating models on validation set...
+2025-09-15 20:38:02,357 - modeling - INFO - naive_bayes - Accuracy: 0.8361, F1: 0.8214
+2025-09-15 20:38:02,358 - utils - INFO - naive_bayes: Accuracy=0.8361, F1=0.8214, ROC-AUC=0.9037
+2025-09-15 20:38:02,367 - modeling - INFO - knn - Accuracy: 0.7541, F1: 0.7273
+2025-09-15 20:38:02,367 - utils - INFO - knn: Accuracy=0.7541, F1=0.7273, ROC-AUC=0.8626
+2025-09-15 20:38:02,375 - modeling - INFO - decision_tree - Accuracy: 0.7869, F1: 0.7347
+2025-09-15 20:38:02,375 - utils - INFO - decision_tree: Accuracy=0.7869, F1=0.7347, ROC-AUC=0.7825
+2025-09-15 20:38:02,375 - utils - INFO - Creating ensemble model...
+2025-09-15 20:38:02,375 - modeling - INFO - Ensemble model created with 3 base models
+2025-09-15 20:38:06,243 - modeling - INFO - ensemble - Accuracy: 0.7869, F1: 0.7547
+2025-09-15 20:38:06,244 - utils - INFO - Ensemble Results: {'accuracy': 0.7868852459016393, 'precision': 0.8, 'recall': 0.7142857142857143, 'f1': 0.7547169811320755, 'roc_auc': 0.8896103896103896}
+2025-09-15 20:38:06,244 - utils - INFO - Saving trained models...
+2025-09-15 20:38:06,250 - persistence - INFO - Model saved to models/heart_model.pkl
+2025-09-15 20:38:06,251 - utils - INFO - Model training completed successfully
+2025-09-15 20:38:06,252 - utils - INFO - Evaluating models on test set...
+2025-09-15 20:38:06,253 - utils - INFO - Evaluating naive_bayes...
+2025-09-15 20:38:06,268 - evaluation - INFO - Classification report generated
+2025-09-15 20:38:06,345 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,345 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,345 - utils - WARNING - Failed to evaluate naive_bayes: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,345 - utils - INFO - Evaluating knn...
+2025-09-15 20:38:06,359 - evaluation - INFO - Classification report generated
+2025-09-15 20:38:06,366 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,366 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,367 - utils - WARNING - Failed to evaluate knn: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,367 - utils - INFO - Evaluating decision_tree...
+2025-09-15 20:38:06,379 - evaluation - INFO - Classification report generated
+2025-09-15 20:38:06,385 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,386 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,386 - utils - WARNING - Failed to evaluate decision_tree: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,386 - utils - INFO - Evaluating ensemble...
+2025-09-15 20:38:06,402 - evaluation - INFO - Classification report generated
+2025-09-15 20:38:06,408 - evaluation - ERROR - Error plotting confusion matrix: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,408 - evaluation - ERROR - Error in comprehensive evaluation: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,408 - utils - WARNING - Failed to evaluate ensemble: object of type 'NoneType' has no len()
+2025-09-15 20:38:06,408 - utils - ERROR - Error in model evaluation: No models were evaluated successfully
+2025-09-15 20:38:06,409 - utils - ERROR - Pipeline execution failed: No models were evaluated successfully

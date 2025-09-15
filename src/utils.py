@@ -26,6 +26,11 @@ def setup_logging(log_level: str = "INFO",
     Returns:
         Configured logger
     """
+    if log_file:
+        log_dir = os.path.dirname(log_file)
+        if log_dir and not os.path.exists(log_dir):
+            os.makedirs(log_dir)  # Tạo thư mục nếu chưa tồn tại
+            
     try:
         # Default log format
         if log_format is None:

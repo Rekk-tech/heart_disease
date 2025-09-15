@@ -19,8 +19,8 @@ logger = logging.getLogger(__name__)
 
 
 def train_naive_bayes(X_train: pd.DataFrame, 
-                     y_train: pd.Series, 
-                     params: Dict[str, Any] = None) -> GaussianNB:
+                      y_train: pd.Series, 
+                      params: Dict[str, Any] = None) -> GaussianNB:
     """
     Train Naive Bayes classifier.
     
@@ -36,6 +36,10 @@ def train_naive_bayes(X_train: pd.DataFrame,
         if params is None:
             params = {'var_smoothing': 1e-9}
         
+        # Ensure var_smoothing is a float
+        if 'var_smoothing' in params:
+            params['var_smoothing'] = float(params['var_smoothing'])
+        
         model = GaussianNB(**params)
         model.fit(X_train, y_train)
         
@@ -45,7 +49,6 @@ def train_naive_bayes(X_train: pd.DataFrame,
     except Exception as e:
         logger.error(f"Error training Naive Bayes: {e}")
         raise
-
 
 def train_knn(X_train: pd.DataFrame, 
               y_train: pd.Series, 
@@ -226,7 +229,7 @@ def train_models(X_train: pd.DataFrame,
     """
     try:
         models = {}
-        model_configs = config.get('models', {})
+        model_configs = config.get('model_params', {})
         
         # Train Naive Bayes
         if 'naive_bayes' in model_configs:

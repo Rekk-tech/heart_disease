@@ -5,7 +5,7 @@ Data preprocessing utilities for heart disease prediction.
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -98,7 +98,7 @@ def create_preprocessor(config: Dict[str, Any]) -> ColumnTransformer:
             ('imputer', SimpleImputer(
                 strategy=preprocessing_config['categorical_strategy']
             )),
-            ('encoder', LabelEncoder())
+            ('encoder', OneHotEncoder(handle_unknown='ignore'))
         ])
         
         # Combine pipelines

@@ -56,8 +56,13 @@ feature_engineering:
   create_ratios: true
   feature_selection: true
 
+# Feature selection
+feature_selection:
+  method: "univariate"
+  n_features_to_select: 10
+
 # Model parameters
-models:
+model_params:
   naive_bayes:
     var_smoothing: 1e-9
   
